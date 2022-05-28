@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+    /*display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 6fr;*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    overflow:-moz-hidden-unscrollable;
+    
+}
+.nav{
+    color: white;
+    background-color: #7dd3fc;
+    width: 250px;
+    min-height:100vh;
+    position:fixed;
+    
+    
+}
+ul{ 
+    list-style: none;
+    font-size: larger;
+}
+li{
+    margin: 10px 0;
+}
+li:hover{
+    transform: scale(1.2);
+}
+header{
+    margin-left: 250px;
+    padding: 25px;
+    grid-column: 2/6;
+    grid-row:1/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    
+}
+.profile{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    padding-top:10px;
+    gap: 5px;
+    
+}
+.profile img{
+    grid-row: 1/3;
+}
+.info{
+       display: flex;
+       justify-content: end;
+       gap: 30px;
+       align-items: center;
+       margin: 0;
+       padding-right: 25px;
+}
+.actions{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.actions>button{
+    width: 100px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #0369a1;
+    color: white;
+    font-weight: bolder;
+}
+.search input{
+     width: 90%;
+     padding: 5px;
+     border-radius: 10px;
+     
+}
+main{
+    margin-left: 250px;
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 20px;
+    gap: 20px;
+    background-color: #e0f2fe;
+    z-index: 0;
+    
+
+}
+
+.cards{
+    display:grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));;
+    gap: 10px;
+    
+    
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border-left: 5px solid #0284c7;
+    box-shadow: 2px 2px 2px 2px lightblue;
+    --wid:450px;
+    height: auto;
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.announcement{
+    width: fit-content;
+    box-shadow: 2px 2px 2px 2px lightblue;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.trending{
+    min-width: 300px;
+    box-shadow: 2px 2px 2px 2px lightblue;
+  
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+.icons{
+    display: flex;
+    gap: 10px;
+    align-self: flex-end;
+   
+}
+button:hover{
+    transform: scale(1.2);
+}
+svg:hover{
+    transform: scale(1.5);
+
+}
+img:hover{
+   transform: scale(1.2);
+}
